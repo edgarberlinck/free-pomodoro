@@ -49,7 +49,7 @@ struct FreePomodoroView: View {
     }
 }
 
-//#Preview {
-//    FreePomodoroView()
-//        .frame(width: 300, height: 300)
-//}
+#Preview {
+    FreePomodoroView()
+        .frame(width: 300, height: 300)
+}

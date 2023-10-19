@@ -18,6 +18,7 @@
 		7943C55E2AE196BE0011FE04 /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C55D2AE196BE0011FE04 /* TaskStatus.swift */; };
 		7943C5602AE1B8E20011FE04 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C55F2AE1B8E20011FE04 /* PomodoroTimer.swift */; };
 		7943C5622AE1CBE60011FE04 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C5612AE1CBE60011FE04 /* ApplicationMenu.swift */; };
+		7943C5652AE1E75B0011FE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C5642AE1E75B0011FE04 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7943C55D2AE196BE0011FE04 /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
 		7943C55F2AE1B8E20011FE04 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
 		7943C5612AE1CBE60011FE04 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
+		7943C5642AE1E75B0011FE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +105,10 @@
 		7943C52F2AE1917A0011FE04 /* FreePomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				7943C5662AE1E7720011FE04 /* Pomodoro */,
+				7943C5632AE1E7340011FE04 /* MenuBar */,
 				7943C5302AE1917A0011FE04 /* FreePomodoroApp.swift */,
-				7943C5612AE1CBE60011FE04 /* ApplicationMenu.swift */,
 				7943C5322AE1917A0011FE04 /* FreePomodoroView.swift */,
-				7943C55F2AE1B8E20011FE04 /* PomodoroTimer.swift */,
-				7943C55B2AE1961D0011FE04 /* Task.swift */,
-				7943C55D2AE196BE0011FE04 /* TaskStatus.swift */,
 				7943C5342AE1917B0011FE04 /* Assets.xcassets */,
 				7943C5392AE1917B0011FE04 /* FreePomodoro.entitlements */,
 				7943C5362AE1917B0011FE04 /* Preview Content */,
@@ -139,6 +139,25 @@
 				7943C54E2AE1917B0011FE04 /* FreePomodoroUITestsLaunchTests.swift */,
 			);
 			path = FreePomodoroUITests;
+			sourceTree = "<group>";
+		};
+		7943C5632AE1E7340011FE04 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				7943C5612AE1CBE60011FE04 /* ApplicationMenu.swift */,
+				7943C5642AE1E75B0011FE04 /* AppDelegate.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		7943C5662AE1E7720011FE04 /* Pomodoro */ = {
+			isa = PBXGroup;
+			children = (
+				7943C55F2AE1B8E20011FE04 /* PomodoroTimer.swift */,
+				7943C55B2AE1961D0011FE04 /* Task.swift */,
+				7943C55D2AE196BE0011FE04 /* TaskStatus.swift */,
+			);
+			path = Pomodoro;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +294,7 @@
 				7943C5622AE1CBE60011FE04 /* ApplicationMenu.swift in Sources */,
 				7943C55C2AE1961D0011FE04 /* Task.swift in Sources */,
 				7943C55E2AE196BE0011FE04 /* TaskStatus.swift in Sources */,
+				7943C5652AE1E75B0011FE04 /* AppDelegate.swift in Sources */,
 				7943C5602AE1B8E20011FE04 /* PomodoroTimer.swift in Sources */,
 				7943C5312AE1917A0011FE04 /* FreePomodoroApp.swift in Sources */,
 			);
