@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7943C5312AE1917A0011FE04 /* FreePomodoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C5302AE1917A0011FE04 /* FreePomodoroApp.swift */; };
-		7943C5332AE1917A0011FE04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C5322AE1917A0011FE04 /* ContentView.swift */; };
+		7943C5332AE1917A0011FE04 /* FreePomodoroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C5322AE1917A0011FE04 /* FreePomodoroView.swift */; };
 		7943C5352AE1917B0011FE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7943C5342AE1917B0011FE04 /* Assets.xcassets */; };
 		7943C5382AE1917B0011FE04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7943C5372AE1917B0011FE04 /* Preview Assets.xcassets */; };
 		7943C5432AE1917B0011FE04 /* FreePomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C5422AE1917B0011FE04 /* FreePomodoroTests.swift */; };
 		7943C54D2AE1917B0011FE04 /* FreePomodoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C54C2AE1917B0011FE04 /* FreePomodoroUITests.swift */; };
 		7943C54F2AE1917B0011FE04 /* FreePomodoroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C54E2AE1917B0011FE04 /* FreePomodoroUITestsLaunchTests.swift */; };
+		7943C55C2AE1961D0011FE04 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C55B2AE1961D0011FE04 /* Task.swift */; };
+		7943C55E2AE196BE0011FE04 /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C55D2AE196BE0011FE04 /* TaskStatus.swift */; };
+		7943C5602AE1B8E20011FE04 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C55F2AE1B8E20011FE04 /* PomodoroTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		7943C52D2AE1917A0011FE04 /* FreePomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreePomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7943C5302AE1917A0011FE04 /* FreePomodoroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePomodoroApp.swift; sourceTree = "<group>"; };
-		7943C5322AE1917A0011FE04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7943C5322AE1917A0011FE04 /* FreePomodoroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePomodoroView.swift; sourceTree = "<group>"; };
 		7943C5342AE1917B0011FE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7943C5372AE1917B0011FE04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7943C5392AE1917B0011FE04 /* FreePomodoro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FreePomodoro.entitlements; sourceTree = "<group>"; };
@@ -45,6 +48,9 @@
 		7943C5482AE1917B0011FE04 /* FreePomodoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreePomodoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7943C54C2AE1917B0011FE04 /* FreePomodoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePomodoroUITests.swift; sourceTree = "<group>"; };
 		7943C54E2AE1917B0011FE04 /* FreePomodoroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreePomodoroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7943C55B2AE1961D0011FE04 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		7943C55D2AE196BE0011FE04 /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
+		7943C55F2AE1B8E20011FE04 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				7943C5302AE1917A0011FE04 /* FreePomodoroApp.swift */,
-				7943C5322AE1917A0011FE04 /* ContentView.swift */,
+				7943C5322AE1917A0011FE04 /* FreePomodoroView.swift */,
+				7943C55F2AE1B8E20011FE04 /* PomodoroTimer.swift */,
+				7943C55B2AE1961D0011FE04 /* Task.swift */,
+				7943C55D2AE196BE0011FE04 /* TaskStatus.swift */,
 				7943C5342AE1917B0011FE04 /* Assets.xcassets */,
 				7943C5392AE1917B0011FE04 /* FreePomodoro.entitlements */,
 				7943C5362AE1917B0011FE04 /* Preview Content */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7943C5332AE1917A0011FE04 /* ContentView.swift in Sources */,
+				7943C5332AE1917A0011FE04 /* FreePomodoroView.swift in Sources */,
+				7943C55C2AE1961D0011FE04 /* Task.swift in Sources */,
+				7943C55E2AE196BE0011FE04 /* TaskStatus.swift in Sources */,
+				7943C5602AE1B8E20011FE04 /* PomodoroTimer.swift in Sources */,
 				7943C5312AE1917A0011FE04 /* FreePomodoroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
