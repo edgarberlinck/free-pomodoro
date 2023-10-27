@@ -18,6 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if let button = statusBarItem.button {
             button.title = "FP"
+            button.isBordered = true
             statusBarItem.menu = menu.createMenu()
         }
         

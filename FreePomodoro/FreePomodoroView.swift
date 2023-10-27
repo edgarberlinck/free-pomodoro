@@ -9,6 +9,9 @@ import SwiftUI
 
 struct FreePomodoroView: View {
     @StateObject private var pomodoroTimer = PomodoreTimer()
+    @State private var requestedDate = Date()
+    let notificationHandler = NotificationHandler()
+    
     private let timer = Timer.publish(every: 1, on: .main, in: .common)
         .autoconnect()
     
@@ -19,9 +22,9 @@ struct FreePomodoroView: View {
                 .font(.system(size: 70, weight: .medium, design: .rounded))
                 .padding()
                 .frame(width: width)
-                .alert("Done!", isPresented: $pomodoroTimer.showingAlert) {
-                    // Code
-                }
+//                .alert("Done!", isPresented: $pomodoroTimer.showingAlert) {
+//                    // Code
+//                }
                 .background(.thinMaterial)
                 .cornerRadius(20)
                 .overlay(RoundedRectangle(cornerRadius: 20)
@@ -38,18 +41,32 @@ struct FreePomodoroView: View {
                 }
                 .disabled(pomodoroTimer.isActive)
                 
-                Button("Pause", action: pomodoroTimer.reset)
-                    .tint(.red)
+                Button("Stop and Skip") {
+                    pomodoroTimer.reset()
+                }
+                .tint(.red)
+                .disabled(!pomodoroTimer.isActive)
+
             }
             .frame(width: width)
         }
+        .onAppear() {
+            notificationHandler.askPermission()
+        }
         .onReceive(timer) { _ in
             pomodoroTimer.updateCountdown()
+            if (pomodoroTimer.isFinished) {
+                notificationHandler.sendNotification(
+                    title: "Interval is Finished",
+                    body: "Your interval is finished")
+                pomodoroTimer.isFinished.toggle()
+                pomodoroTimer.nextInterval()
+            }
         }
     }
 }
 
-#Preview {
-    FreePomodoroView()
-        .frame(width: 300, height: 300)
-}
+//#Preview {
+//    FreePomodoroView()
+//        .frame(width: 300, height: 300)
+//}

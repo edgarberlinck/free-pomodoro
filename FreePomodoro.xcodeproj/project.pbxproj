@@ -19,6 +19,7 @@
 		7943C5602AE1B8E20011FE04 /* PomodoroTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C55F2AE1B8E20011FE04 /* PomodoroTimer.swift */; };
 		7943C5622AE1CBE60011FE04 /* ApplicationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C5612AE1CBE60011FE04 /* ApplicationMenu.swift */; };
 		7943C5652AE1E75B0011FE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7943C5642AE1E75B0011FE04 /* AppDelegate.swift */; };
+		799BC5B22AEC407600009579 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799BC5B12AEC407600009579 /* NotificationHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		7943C55F2AE1B8E20011FE04 /* PomodoroTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimer.swift; sourceTree = "<group>"; };
 		7943C5612AE1CBE60011FE04 /* ApplicationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationMenu.swift; sourceTree = "<group>"; };
 		7943C5642AE1E75B0011FE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		799BC5B12AEC407600009579 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		7943C52F2AE1917A0011FE04 /* FreePomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				799BC5B02AEC406400009579 /* Handlers */,
 				7943C5662AE1E7720011FE04 /* Pomodoro */,
 				7943C5632AE1E7340011FE04 /* MenuBar */,
 				7943C5302AE1917A0011FE04 /* FreePomodoroApp.swift */,
@@ -158,6 +161,14 @@
 				7943C55D2AE196BE0011FE04 /* TaskStatus.swift */,
 			);
 			path = Pomodoro;
+			sourceTree = "<group>";
+		};
+		799BC5B02AEC406400009579 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				799BC5B12AEC407600009579 /* NotificationHandler.swift */,
+			);
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7943C5332AE1917A0011FE04 /* FreePomodoroView.swift in Sources */,
+				799BC5B22AEC407600009579 /* NotificationHandler.swift in Sources */,
 				7943C5622AE1CBE60011FE04 /* ApplicationMenu.swift in Sources */,
 				7943C55C2AE1961D0011FE04 /* Task.swift in Sources */,
 				7943C55E2AE196BE0011FE04 /* TaskStatus.swift in Sources */,

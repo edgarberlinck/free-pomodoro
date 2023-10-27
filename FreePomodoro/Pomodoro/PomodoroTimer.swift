@@ -11,7 +11,7 @@ extension FreePomodoroView {
     final class PomodoreTimer: ObservableObject {
         @Published var isActive = false
         @Published var time: String = "25:00"
-        @Published var showingAlert = false
+        @Published var isFinished = false
         @Published var minutes: Float = 25.0 {
             didSet {
                 self.time = "\(Int(minutes)):00"
@@ -34,6 +34,10 @@ extension FreePomodoroView {
             self.time = "\(Int(minutes)):00"
         }
         
+        func nextInterval() {
+            self.reset()
+        }
+        
         func updateCountdown() {
             guard isActive else { return }
             
@@ -43,7 +47,7 @@ extension FreePomodoroView {
             if diff <= 0 {
                 self.isActive = false
                 self.time = "0:00"
-                self.showingAlert = true
+                self.isFinished = true
                 return
             }
             
